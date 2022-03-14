@@ -1,0 +1,15 @@
+C:\Users\DELL\c#demos\C-assignment2\bin\Debug\net6.0\C-assignment2.exe
+C:\Users\DELL\c#demos\C-assignment2\bin\Debug\net6.0\C-assignment2.deps.json
+C:\Users\DELL\c#demos\C-assignment2\bin\Debug\net6.0\C-assignment2.runtimeconfig.json
+C:\Users\DELL\c#demos\C-assignment2\bin\Debug\net6.0\C-assignment2.dll
+C:\Users\DELL\c#demos\C-assignment2\bin\Debug\net6.0\C-assignment2.pdb
+C:\Users\DELL\c#demos\C-assignment2\obj\Debug\net6.0\C-assignment2.csproj.AssemblyReference.cache
+C:\Users\DELL\c#demos\C-assignment2\obj\Debug\net6.0\C-assignment2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\c#demos\C-assignment2\obj\Debug\net6.0\C-assignment2.AssemblyInfoInputs.cache
+C:\Users\DELL\c#demos\C-assignment2\obj\Debug\net6.0\C-assignment2.AssemblyInfo.cs
+C:\Users\DELL\c#demos\C-assignment2\obj\Debug\net6.0\C-assignment2.csproj.CoreCompileInputs.cache
+C:\Users\DELL\c#demos\C-assignment2\obj\Debug\net6.0\C-assignment2.dll
+C:\Users\DELL\c#demos\C-assignment2\obj\Debug\net6.0\refint\C-assignment2.dll
+C:\Users\DELL\c#demos\C-assignment2\obj\Debug\net6.0\C-assignment2.pdb
+C:\Users\DELL\c#demos\C-assignment2\obj\Debug\net6.0\C-assignment2.genruntimeconfig.cache
+C:\Users\DELL\c#demos\C-assignment2\obj\Debug\net6.0\ref\C-assignment2.dll
