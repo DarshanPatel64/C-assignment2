@@ -3,18 +3,15 @@ using System.Collections.Generic;
 
 namespace demos{
     class InventoryList<T> where T : Product{
-        protected List<T> inventory;
-        private int count;
+        private List<T> inventory;
         public InventoryList(){
             this.inventory = new List<T>();
-            this.count = 0;
         }
         public void Add(T item){ 
             inventory.Add(item);
-            count++;
         }
         public int getCount(){
-            return this.count;
+            return this.inventory.Count;
         }
         public Product findByName(string name){
 
@@ -27,7 +24,6 @@ namespace demos{
         }
         public List<Product> findByType(string type){
             var temp = new List<Product>();
-            
             foreach(var item in this.inventory){
                 if(item._type == type){
                     temp.Add(item);
@@ -36,28 +32,45 @@ namespace demos{
             return temp;
         }
         public void remove(string name){
-            foreach(var item in this.inventory){
+            foreach(var item in inventory.ToList()){
                 if(item._name == name){
-                    this.inventory.Remove(item);
+                    try{
+                        inventory.Remove(item);
+                    }catch(Exception ){
+
+                    }
                 }
             }
+            Console.WriteLine("{0} removed, Number of Available Products : {1}",name,this.inventory.Count);
         }
 
         public void addQuantity(string name,int quantity){
-            foreach(var item in this.inventory){
+            foreach(var item in inventory){
                 if(item._name == name){
+                    Console.WriteLine($"{name}\'s Current Quantity {item._quantity}");
                     item._quantity += quantity;
+                    Console.WriteLine($"{item._name}'s updated quantity (+){quantity} : {item._quantity}");
                 }
-                Console.WriteLine($"{item._name}'s quantity : {item._quantity}");
             }
         }
-        public double calculateBill(Dictionary<string,int> items){
+        public void calculateBill(){
             double bill = 0.0;
+            var items = new Dictionary<string,int>();
+            int count = int.Parse(Console.ReadLine());
+            
+            for (int i = 0; i < count; i++){
+                Console.WriteLine("enter product name");
+                string product = Console.ReadLine();
+                Console.WriteLine("enter product quantity");
+                int quantity = int.Parse(Console.ReadLine());
+                items[product] = quantity;
+            }
+            
             foreach(var item in items) {
                 var x = this.findByName(item.Key);
                 bill += (x._price*item.Value);
             }
-            return bill;
+            Console.WriteLine("Amount: " + bill);
         }
     }
 }
